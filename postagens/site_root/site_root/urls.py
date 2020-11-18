@@ -23,6 +23,6 @@ from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('ckeditor/', include('ckeditor_uploader.urls')),
-    path('', views.Home, name='home'),
+    path('', views.Index, name='index'),
 ] + static(settings.MEDIA_URL, document_root= settings.MEDIA_ROOT)
 

@@ -1,16 +1,46 @@
 {% extends 'home.html' %}
 
-{% block content %}
 {% block title %}<title> oi</title> {% endblock %}
+{% block sub_header %}
+
+<body class="corpo">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="/">Eu.com</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contatos</a>
+            </li>
+          </ul>
+
+         
+        </div>
+        <ul>
+          <li> <a href="#"></a> Cadastre-se </li>
+        </ul>
+      </nav>
+{% endblock %}
+
+{% block content %}
 
 <div class="row"> 
-    <div class="divRight col-md-7 offset-1" id="divRight" onmouseover="seila()">
+    <div class="divRight col-md-7 offset-1" id="divRight" onmouseover="entrar()" onmouseout="sair()">
        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, quidem fugit! Quia optio similique velit. Cum, culpa consequuntur possimus totam assumenda architecto laborum saepe ipsum aliquid voluptatibus eum nostrum delectus.</p>
     </div>
     
     <div class="col-md-3  divlefth" id="mud" onclick="mudar">
     <span>    
-        
+    
         <a href="http:/award/" class="prm"> Ganhe Premios </a>
     </span>    
     </div>
