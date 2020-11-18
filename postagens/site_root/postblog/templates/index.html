@@ -33,8 +33,11 @@
 {% block content %}
 
 <div class="row"> 
+  {% for post in posts %}
     <div class="divRight col-md-7 offset-1" id="divRight" onmouseover="entrar()" onmouseout="sair()">
-       <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, quidem fugit! Quia optio similique velit. Cum, culpa consequuntur possimus totam assumenda architecto laborum saepe ipsum aliquid voluptatibus eum nostrum delectus.</p>
+      <h1> {{ post.titulo }} </h1>
+       {{ post.conteudo }} 
+       {{ post.resumo | safe }}
     </div>
     
     <div class="col-md-3  divlefth" id="mud" onclick="mudar">
@@ -43,6 +46,14 @@
         <a href="http:/award/" class="prm"> Ganhe Premios </a>
     </span>    
     </div>
+    <div class="divRight col-md-7 offset-1" id="divRight" onmouseover="entrar()" onmouseout="sair()">
+      <h1> {{ post.titulo }} </h1>
+      {{ post.resumo }}
+
+    </div>
+       
+    </div>
+  {% endfor %}  
 </div>
 
 {% endblock %}
