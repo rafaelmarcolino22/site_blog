@@ -5,7 +5,8 @@ body{
     font-size: 20px;
 }
 h1{
-    color: blue;   
+    text-align: center;
+    color: #000;   
 }
 .container-fluid{
     padding: 0px;
@@ -71,15 +72,11 @@ ul {
 }
 
 .divlefth{
-    border: 1px solid #000;
-    margin-left: 50px;
-    background-image: url("img/cdz.jpg");
-    background-repeat: round;
-    background-image: repeating-linear-gradient();
-    border-radius: 10px;
+    border: 1px solid black;
+    margin-left: 30px;
     margin-top: 5px;
-    margin-bottom: 5px;
-    padding-top: 170px;
+    border-radius: 10px;
+    height: 800px;
 }
 
 .divRight:hover {

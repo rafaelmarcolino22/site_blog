@@ -5,8 +5,9 @@ from django.db import models
 
 class Post(models.Model):
     titulo = models.CharField(max_length=256)
+    resumo = RichTextField()
     conteudo = RichTextField()
-    resumo = RichTextUploadingField()
+    foto = RichTextUploadingField()
     autor = models.ForeignKey(User ,on_delete=models.PROTECT)
     createad_at = models.DateField(auto_now_add=True)
 

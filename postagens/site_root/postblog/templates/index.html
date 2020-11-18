@@ -28,6 +28,8 @@
           <li> <a href="#"></a> Cadastre-se </li>
         </ul>
       </nav>
+      
+      <div></div>
 {% endblock %}
 
 {% block content %}
@@ -35,25 +37,20 @@
 <div class="row"> 
   {% for post in posts %}
     <div class="divRight col-md-7 offset-1" id="divRight" onmouseover="entrar()" onmouseout="sair()">
-      <h1> {{ post.titulo }} </h1>
-       {{ post.conteudo }} 
-       {{ post.resumo | safe }}
+      <a href="/materia/{{ post.id }}">
+        <h1> {{ post.titulo }} </h1>
+        {{ post.resumo  }}
+        {{ post.foto |safe }}
+      </a>
     </div>
     
-    <div class="col-md-3  divlefth" id="mud" onclick="mudar">
-    <span>    
-    
-        <a href="http:/award/" class="prm"> Ganhe Premios </a>
-    </span>    
-    </div>
-    <div class="divRight col-md-7 offset-1" id="divRight" onmouseover="entrar()" onmouseout="sair()">
-      <h1> {{ post.titulo }} </h1>
-      {{ post.resumo }}
+    {% endfor %}  
+  
+        <div class="col-md-3  divlefth" id="mud" onclick="mudar">oi  </div>
 
-    </div>
+        
        
-    </div>
-  {% endfor %}  
+</div>
 </div>
 
 {% endblock %}
