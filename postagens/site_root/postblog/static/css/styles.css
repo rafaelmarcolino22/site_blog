@@ -8,6 +8,11 @@ h1{
     text-align: center;
     color: #000;   
 }
+
+h2{
+    text-align: center;
+    color: #fff;
+}
 .container-fluid{
     padding: 0px;
 }
@@ -77,15 +82,33 @@ ul {
     border-radius: 10px;
 }
 
-.divlefth{
-    border: 1px solid black;
+.divlefth{  
+    border: 1px solid #000;
     margin-left: 30px;
     margin-top: 5px;
     border-radius: 10px;
-    height: 800px;
-
+    height: 878px;
+    width: 300px;
     position: absolute;
     margin-left: 1000px;
+    padding: 0px;
+    background-image: url("/media/uploads/brindes/bowie.jpg");
+    background-size: 500px 300px;
+    background-position: center;
+}
+
+.imgbrind{
+    height: 800px;
+    width: 290px;
+    border-radius: 10px;
+    margin-left: 2px;
+    
+
+}
+
+#imd_brinde h2{
+    color: #fff;
+    font-size: 100px;
 }
 
 .divRight:hover {
