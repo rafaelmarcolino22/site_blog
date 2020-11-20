@@ -77,6 +77,9 @@ ul {
     margin-top: 5px;
     border-radius: 10px;
     height: 800px;
+
+    position: absolute;
+    margin-left: 1000px;
 }
 
 .divRight:hover {
@@ -110,7 +113,24 @@ ul {
 
 a:hover {
     text-decoration: none;
-    color: black;
+    color: blue;
 }
 
+a{
+    color: black;   
+}
+
+/* materia */
+
+.materia{
+    
+    border: 1px solid black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 700px;
+    height: auto;
+    background-color: #fff;
+    border-radius: 10px;
+
+}
 
