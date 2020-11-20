@@ -9,3 +9,4 @@ def MateriaPost(request, id):
     post = get_object_or_404(Post, pk=id)
     return render(request, 'materia.html', {'post':post})
 # Create your views here.
+
