@@ -29,6 +29,12 @@ h1{
     position: relative;
     margin-top: 40px;
 }
+
+ .navbar .eu{
+    color: rgb(183, 240, 193);
+    margin-left: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 /* foter */ 
 
 footer{
@@ -117,7 +123,15 @@ a:hover {
 }
 
 a{
-    color: black;   
+    color: #000;   
+}
+
+li{
+    color: #fff;
+}
+
+li a:hover{
+    color: rgb(212, 235, 110);
 }
 
 /* materia */
