@@ -25,5 +25,6 @@ urlpatterns = [
     path('ckeditor/', include('ckeditor_uploader.urls')),
     path('', views.Index, name='index'),
     path('materia/<int:id>', views.MateriaPost, name='materia-post'),
+    path('prm/', views.Prm, name='premios')
 ] + static(settings.MEDIA_URL, document_root= settings.MEDIA_ROOT)
 

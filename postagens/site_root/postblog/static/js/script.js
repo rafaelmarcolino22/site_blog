@@ -13,8 +13,8 @@ function leftEnter(){
     sei.innerHTML = 'Click AQUI  -- E SE  -- CADASTRE'
     sei.style.color = 'red'
     sei.style.fontSize = '60px'
-}
 
+}
 function leftSair(){
     
     var sei = document.getElementById('imd_brinde')
@@ -23,4 +23,4 @@ function leftSair(){
     sei.style.fontSize = '90px'
     sei.style.textAlign = 'center';
     
-}
+

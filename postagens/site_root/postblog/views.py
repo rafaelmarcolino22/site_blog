@@ -8,5 +8,8 @@ def Index(request):
 def MateriaPost(request, id):
     post = get_object_or_404(Post, pk=id)
     return render(request, 'materia.html', {'post':post})
+
+def Prm(request):
+    return render(request, 'premio.html')    
 # Create your views here.
 

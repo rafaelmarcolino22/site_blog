@@ -15,3 +15,23 @@ class Post(models.Model):
         return self.titulo
 
 
+
+
+class Cadas(models.Model):
+
+    STATUS = (
+        ('doing', 'DOING'),
+        ('done', 'DONE'),
+    )
+
+    nome = models.CharField(max_length=256)
+    idade = models.CharField(max_length=3)
+    cidade = models.CharField(max_length=30)
+
+
+    done = models.CharField(
+        max_length=5,
+        choices=STATUS
+    )
+
+    
